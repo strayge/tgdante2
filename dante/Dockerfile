@@ -10,11 +10,12 @@ ENV DANTE_TEMP dante
 ENV DANTE_DEPS linux-pam-dev curl gcc g++ make
 ENV WORKERS "10"
 ENV PORT "8081"
+ENV EXTERNAL_HOSTNAME ""
 
 RUN set -x \
   # Runtime dependencies
   && apk --no-cache add \
-    bash apg \
+    bash apg curl \
   # Build dependencies
   && apk add --no-cache -t .build-deps $DANTE_DEPS \
   && mkdir -p $DANTE_TEMP \
