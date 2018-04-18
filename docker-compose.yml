@@ -10,7 +10,7 @@ services:
                 volumes:
                         - ./etc:/etc
                 ports:
-                        - "1080:1080"
+                        - "8081:8081"
                 network_mode: "host"
                 logging:
                         driver: syslog

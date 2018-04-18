@@ -8,7 +8,7 @@ PASSWORD0=${2}
 if [ -f "/tmp/dante_port" ]; then
         PORT=`cat /tmp/dante_port`
 else
-        PORT="1080"
+        PORT="8081"
 fi
 
 if [ x"$USER_NAME" = "x" ]; then

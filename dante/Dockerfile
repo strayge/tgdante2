@@ -9,7 +9,7 @@ ENV DANTE_FILE dante.tar.gz
 ENV DANTE_TEMP dante
 ENV DANTE_DEPS linux-pam-dev curl gcc g++ make
 ENV WORKERS "10"
-ENV PORT "1080"
+ENV PORT "8081"
 
 RUN set -x \
   # Runtime dependencies
