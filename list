@@ -1,0 +1,2 @@
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+docker run --rm -ti -v $DIR/etc:/etc tgdante2_dante /scripts/list

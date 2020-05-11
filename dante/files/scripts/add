@@ -8,7 +8,7 @@ PASSWORD0=${2}
 if [ -f "/tmp/dante_port" ]; then
         PORT=`cat /tmp/dante_port`
 else
-        PORT="1080"
+        PORT="8081"
 fi
 
 if [ x"$USER_NAME" = "x" ]; then
@@ -32,5 +32,5 @@ fi
 adduser -D -H -S "${USER_NAME}"
 echo "${USER_NAME}:${PASSWORD}" | chpasswd -c SHA256
 
-echo "tg://socks?&user=${USER_NAME}&pass=${PASSWORD}&port=${PORT}&server="
+echo "tg://socks?&user=${USER_NAME}&pass=${PASSWORD}&port=${PORT}&server=strayge.com"
 
