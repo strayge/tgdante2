@@ -13,7 +13,7 @@ fi
 if [ -f "/tmp/dante_port" ]; then
         PORT=`cat /tmp/dante_port`
 else
-        PORT="8081"
+        PORT="1080"
 fi
 
 if [ x"$USER_NAME" = "x" ]; then

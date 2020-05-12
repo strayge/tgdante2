@@ -28,7 +28,7 @@ if [  x"${INTERFACE}" != "x" ]; then
 fi
 
 if [  x"${PORT}" != "x" ]; then
-        # internal: 0.0.0.0 port = 8081
+        # internal: 0.0.0.0 port = 1080
         sed -i 's/\(internal\:.*port[ ]*=[ ]*\)[^ ]*\(.*\)$/\1'"${PORT}"'\2/' "${CFGFILE}"
         echo "${PORT}" > /tmp/dante_port
 fi

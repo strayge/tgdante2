@@ -26,7 +26,7 @@ Very simple usage
 
 ```console
 docker pull schors/tgdante2
-docker run -d --net=host --restart unless-stopped -e PORT=8081 -e USER=user0 -e PASS=secret0 --name tgdante schors/tgdante2
+docker run -d --net=host --restart unless-stopped -e PORT=1080 -e USER=user0 -e PASS=secret0 --name tgdante schors/tgdante2
 ```
 
 Usage with Docker Hub image
@@ -53,14 +53,14 @@ Access test
 -----------
 
 ```console
-curl -x socks5://user2:secret2@localhost:8081 https://web.telegram.org
+curl -x socks5://user2:secret2@localhost:1080 https://web.telegram.org
 ```
 
 Environment variables
 ---------------------
 
 * USER,PASS - create USER with PASSword
-* PORT - listen on PORT. Default: 8081
+* PORT - listen on PORT. Default: 1080
 * INTERFACE - outgoing interface name or IP. Default: autodetect
 * WORKERS - preforked workers. Default: 10
 * IP6 - something, if needed. Default: autodetect
