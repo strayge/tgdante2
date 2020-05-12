@@ -1,19 +1,18 @@
-version: '3.0'
+version: '2.1'
 
 services:
-        dante:
-                build:
-                        context: dante
-                        dockerfile: Dockerfile
-                hostname: dante
-                container_name: dante2.local
-                volumes:
-                        - ./etc:/etc
-                ports:
-                        - "1080:1080"
-                network_mode: "host"
-                logging:
-                        driver: syslog
-                        options:
-                                tag: dante2
-                restart: unless-stopped
+  dante:
+    build: dante
+    hostname: dante
+    container_name: dante2.local
+    volumes:
+      - ./etc:/etc
+    network_mode: "host"
+    logging:
+      driver: json-file
+      options:
+        max-size: "2m"
+        max-file: "2"
+    restart: unless-stopped
+    environment:
+      PORT: 8081
