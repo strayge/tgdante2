@@ -4,7 +4,7 @@ services:
   dante:
     build: dante
     hostname: dante
-    container_name: dante2.local
+    container_name: dante
     volumes:
       - ./etc:/etc
     network_mode: "host"
