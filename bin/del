@@ -1,2 +1,2 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-docker run --rm -ti -v $DIR/../etc:/etc --net=host tgdante2_dante /scripts/del $1
+docker run --rm -ti -v $DIR/etc:/etc tgdante2_dante /scripts/del $1

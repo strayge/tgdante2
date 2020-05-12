@@ -73,7 +73,3 @@ Links
 
 * [Restless Phil](https://2018.schors.spb.ru) Restless Phil (tm)
 * [Roscomnadzor](http://rkn.gov.ru) The Federal Service for Supervision of Communications, Information Technology, and Mass Media
-
-
----
-[![UNLICENSE](noc.png)](UNLICENSE)
