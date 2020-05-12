@@ -11,4 +11,3 @@ if [ x"${USER_NAME}" = "x" ]; then
 fi
 
 deluser "${USER_NAME}"
-
